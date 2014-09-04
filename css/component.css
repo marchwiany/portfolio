@@ -1,0 +1,1542 @@
+/*
+ * HTML5 Boilerplate
+ *
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+
+html,
+button,
+input,
+select,
+textarea {
+    color: #222;
+}
+
+body {
+    font-size: 1em;
+    line-height: 1.4;
+}
+
+/*
+ * Remove text-shadow in selection highlight: h5bp.com/i
+ * These selection rule sets have to be separate.
+ * Customize the background color to match your design.
+ */
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+/*
+ * A better looking default horizontal rule
+ */
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+/*
+ * Remove the gap between images and the bottom of their containers: h5bp.com/i/440
+ */
+
+img {
+    vertical-align: middle;
+}
+
+/*
+ * Remove default fieldset styles.
+ */
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+
+textarea {
+    resize: vertical;
+}
+
+/* ==========================================================================
+   Chrome Frame prompt
+   ========================================================================== */
+
+.chromeframe {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+
+/* ==========================================================================
+	CSS RESET 
+   ========================================================================== */
+
+
+/**
+ * Eric Meyer's Reset CSS v2.0 (http://meyerweb.com/eric/tools/css/reset/)
+ * http://cssreset.com
+ */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+
+/* ==========================================================================
+   Author's custom styles 
+   ========================================================================== */
+   
+h2, h3, h4, p, li {
+	transition:all .5s ease-in-out; 
+  	-o-transition:all .5s ease-in-out; 
+  	-moz-transition:all .5s ease-in-out; 
+  	-webkit-transition:all .5s ease-in-out;
+}
+
+
+/*-------------HEADER----------------*/
+header {
+	margin: 0 auto;
+	width: 100%;
+	font-family: Helvetica;
+	background-color: #fff;
+	background-color: rgba(255,255,255, .95);
+	-webkit-box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.5);
+	box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.2);
+}
+
+header h1 {
+	margin: 0 7%;
+	width: 86%;
+	padding: 25px 0;
+	font-size: 1.3em;
+	font-family: 'Lato', sans-serif;	
+	font-weight: 300;
+	text-transform:uppercase;
+}
+
+header h1 span{
+	font-size: .7em;
+	font-family: 'Lato', sans-serif;
+	font-weight: 300;
+	margin-top: -15px;
+	color: #CCC;
+}
+
+header h1 a{
+	color: #B5B5B5;
+	text-decoration: none;
+}
+
+header h1 a:hover{
+	color: #CCC;
+}
+
+header ul li a:hover{
+	color: #CCC;
+}
+
+
+/*-------------NAVIGATION----------------*/
+.navbar-fixed {
+    top: 0;
+    z-index: 100;
+ 	position: fixed;
+    width: 100%;
+}
+
+.nav{
+	margin:0;
+    padding:0;
+    text-align:center;
+	font-family: 'Lato', sans-serif;
+	padding: 15px 0;
+	background-color: #fff;
+	-webkit-box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.3);
+	box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.3);
+}
+
+.nav a{
+	text-decoration: none;
+    display:inline-block;
+    padding:0 16px;
+	color: #B5B5B5;
+	text-transform: uppercase;
+	font-weight: 300;
+	font-size: .8em;
+}
+
+.nav li a {
+	width:33.33%;
+	text-align: center; 
+	float: left;
+}
+
+
+/*-------------BANNER IMAGE----------------*/
+section {
+	color: #fff;
+	text-align: center;
+	padding: 125px 0 125px 0;	
+}
+
+h2 {
+	margin: 0 7% 15px 7%;
+	width: 86%;
+	font-family: 'Lato', sans-serif;	
+	font-size: 1.5em;
+	font-weight: 300;
+	color: #fff;
+	line-height: 1.3em;	
+}
+
+h2 span{
+	font-size: .8em;	
+}
+
+h4 {
+	font-family: 'Lato', sans-serif;	
+	font-weight: 300;
+	padding-top: 10px;
+	font-size: .7em;
+	padding: 3px;
+	width: 80px;
+	text-align: center;
+	border: 1px solid rgba(250, 250, 250, .7);
+	margin: 0 auto;
+	line-height: 1.5em;
+	color: rgba(250, 250, 250, .7);
+}
+
+em {
+	font-style: italic;
+}
+
+.main1 {
+	padding-top: 20px;
+}
+
+.filter {
+	margin: 0 7%;
+	font-family: 'Lato', sans-serif;	
+	font-weight: 300;
+	padding: 50px 0;
+	background-color: #AAA;
+}
+
+.filter p {
+	float: left;
+		margin-right: 40px;
+
+}
+.filter p a {
+	border: 1px solid #CCC;
+	padding: 20px 60px;
+	text-transform: uppercase;
+}
+
+
+/*-------------HOMEPAGE GRID----------------*/
+.grid {
+	padding: 0 7%;
+	width: 100%;
+	margin: 0 auto;
+	list-style: none;
+	text-align: center;
+}
+
+.grid li {
+	display: inline-block;
+	margin: 0;
+	padding: 12px 0;
+	text-align: left;
+	position: relative;
+}
+
+.grid figure {
+	margin: 0;
+	position: relative;
+}
+
+.grid figure img {
+	max-width: 100%;
+	display: block;
+	position: relative;
+}
+
+.grid figcaption {
+	position: absolute;
+	top: 0;
+	left: 0;
+	padding: 20px;
+	background: #ccc;
+	/*background: #2c3f52;
+	color: #ed4e6e;*/
+}
+
+.grid figcaption h3 {
+	margin: 0;
+	padding: 0;
+	color: #fff;
+}
+
+.grid figcaption span:before {
+	content: 'by ';
+}
+
+.grid figcaption a {
+	text-align: center;
+	padding: 5px 10px;
+	border-radius: 2px;
+	display: inline-block;
+	background: #ed4e6e;
+	color: #fff;
+
+}
+
+.images figcaption {
+	height: 100%;
+	width: 100%;
+	opacity: 0;
+	text-align: center;
+	-webkit-backface-visibility: hidden;
+	-moz-backface-visibility: hidden;
+	backface-visibility: hidden;
+	-webkit-transition: -webkit-transform 0.3s, opacity 0.3s;
+	-moz-transition: -moz-transform 0.3s, opacity 0.3s;
+	transition: transform 0.3s, opacity 0.3s;
+}
+
+.no-touch .images figure:hover figcaption,
+.images figure.cs-hover figcaption {
+	opacity: 1;
+}
+
+.images figcaption h3 {
+	font-family: 'Lato', sans-serif;	
+	font-weight: 300;
+	color: #333;
+	font-size: 1.5em;
+}
+
+.images figcaption h4 {
+	width: 200px;
+	font-family: 'Lato', sans-serif;	
+	font-weight: 300;
+	color: #333;
+	border:none;
+	font-size: .9em;
+	padding-top: 10px;
+}
+
+.images figcaption h5 {
+	margin-top: 50px;
+}
+
+.images figcaption span {
+	display: block;
+}
+
+.images figcaption a {
+	margin-top: 30px;
+}
+
+.homepage {
+	padding-top: 30px;
+}
+
+.homepage img{
+	width:100%;
+	padding: 10px 7% 10px 7%;
+}
+
+.homepage p{
+	font-family: 'Lato', sans-serif;	
+	font-weight: 300;
+	padding: 0 7% 20px 7%;
+	text-align: center;
+	text-transform: uppercase;
+}
+
+.home li{
+	transition:all .5s ease-in-out; 
+    -o-transition:all .5s ease-in-out; 
+    -moz-transition:all .5s ease-in-out; 
+    -webkit-transition:all .5s ease-in-out;
+}
+
+.home li {
+ 	width: 100%;
+ 	float: left;
+}
+
+.home img {
+	display: inline-block;
+  	height: auto;
+  	width: 100%;
+  	vertical-align: middle;
+}
+
+
+/*-------------ABOUT---------------*/
+#aboutpic {
+	background:url(../img/full/about/about_header.jpg) 100% no-repeat fixed;
+	background-position: center;
+	background-size: cover;
+}
+
+#about h4 {
+	width: 110px;	
+}
+
+#about h3 {
+	font-family: 'Lato', sans-serif;
+	font-weight: 300;
+	color: #666;
+	margin: 0 7%;
+	font-size: 1.1em;
+	line-height: 1.4em;	
+	max-width: 600px;
+}
+
+#about .line {
+	margin-top: 60px;
+}
+
+#about #skills .line {
+	margin-top: 20px;
+}
+
+#education, #skills  {
+	padding: 45px 0 0 0;
+	background-color: #EBEBEB;
+}
+
+#interests, #contact {
+	padding: 0;
+	background-color: #EBEBEB;
+}
+
+.subhead span p{
+	font-size: 2.3em;
+}
+
+#education .subhead p span {
+	border: 1px solid #999;
+	padding: 10px 15px;
+}
+
+#education .col span{
+	text-transform: uppercase;
+	font-weight: 600;	
+	font-size: .8em;
+	line-height: 1em;
+}
+
+#education .col {	
+	text-transform: uppercase;
+	font-weight: 300;	
+	font-size: 1em;
+	line-height: 1.5em;
+}
+
+.tabs {
+	padding: 20px 7% 0 7%;
+}
+
+.col {
+    display: block;
+	margin-top: 15px;
+    padding: 20px 0;
+	border: 1px solid #999;
+	font-family: 'Lato', sans-serif;	
+	font-weight: 400;
+    color:#666;
+    text-decoration:none;
+	text-align: center;
+	font-size: 1em;
+}
+
+.threeint .col {
+	text-align: left;
+	border:none;
+}
+
+.threeint {
+	padding-bottom: 50px;
+}
+
+.text1 {
+	background-color: #EBEBEB;
+	margin: -5px 0 0 0;
+}
+
+.threeint .col {
+	font-weight: 300;
+	padding:  0;
+	line-height: 1.3em;	
+	font-size: .9em;
+}
+
+.threeint .col span{
+	text-transform: uppercase;
+	font-weight: 400;	
+	line-height: 2em;
+	font-size: 1.1em;
+}
+
+a:hover li.defaulttab.col.column {
+	 background-color: #639;
+	 color: #EBEBEB;
+}
+
+/*-------------MAIN---------------*/
+body {
+	 background-color: #F7F2F2;
+}
+
+.text {
+	padding: 50px 0;
+	background-color: #EBEBEB;
+}
+
+.main p {
+	font-family: 'Lato', sans-serif;	
+	font-weight: 300;
+	font-size: 1em;
+	line-height: 1.6em;
+	color: #666;
+	margin: 0 7%;
+	width: 86%;
+}
+
+.main img {
+	width: 100%;	
+}
+
+.main .images {
+	margin: 50px 7%;
+	width: 86%;
+}
+
+
+
+.main .images img {
+	padding-bottom: 15px;
+}
+
+.grid_8 p span{
+	font-size: 1.5em;
+}
+
+.contributors p {
+	font-size: .9em;	
+	padding-top: 5px;	
+	line-height: 1.2em;
+
+}
+
+.contributors p span {
+	text-transform: uppercase;
+	font-weight: 400;
+	font-size: .8em;
+}
+
+.quote p{
+	font-size: .9em;
+}
+
+.main .images img.lastimage {
+	padding-bottom: 0;
+}
+
+.twocolumn p {
+	font-size: 1em;
+	text-align: center;
+	line-height: 1.2em;
+	padding-bottom:30px;
+}
+
+#about img {
+	display: inline-block;
+	float: left;
+	width: 20%;
+	padding: 0;
+	margin: 10px 20px 50px 0;
+}
+
+.skills {
+	padding-bottom: 20px;
+}
+
+.images li {
+	font-family: 'Lato', sans-serif;	
+	font-weight: 300;
+}
+
+
+
+/*-------------PAGES---------------*/
+/*--Spurlock--*/
+
+/*--iBook--*/
+#ibookpic  {
+	background:url(../img/full/ibook/ibook_header.png) 100% 0 no-repeat fixed;
+	background-position: center; background-size: cover; 
+}
+
+.download {
+	padding: 20px 0 0 0;
+}
+
+.line {	
+	border-bottom:1px solid #999;
+	margin: 10px 7% 0 7%;
+	width: 86%;
+}
+
+.text p {
+	padding-bottom: 10px;
+}
+
+.text strong {
+	background-color: #C06;
+	padding: 10px 20px;
+	text-transform: uppercase;
+	font-size: .6em;
+	color: #EBEBEB;
+}
+
+
+.text strong:hover {
+	background-color: #666;
+}
+
+
+#faceitpic {
+	background:url(../img/full/faceit/faceit_header.jpg) 100% 0 no-repeat fixed;
+	background-position: center;
+	background-size: cover; 
+}
+
+/*--Cookbook--*/
+#cookbookpic {
+	background:url(../img/full/cookbook/cookbook_header.jpg) 100% 0 no-repeat fixed;
+	background-position: center;
+	background-size: cover; 
+}
+
+#cookbook .text strong {
+	background-color: #49AC38;
+	color: #EBEBEB;
+}
+
+#cookbook .text strong:hover {
+	background-color: #666;
+}
+
+#ninthletterpic {
+	background:url(../img/full/ninthletter/ninthletter_header.jpg) 100% 0 no-repeat fixed;
+	background-position: center;
+	background-size: cover; 
+}
+
+#ninthletter .text strong {
+	background-color: #1175c0;
+}
+
+#ninthletter .text strong:hover {
+	background-color: #666;
+}
+
+#admissionspic {
+	background:url(../img/full/admissions/admissions_header.jpg) 100% 0 no-repeat fixed;
+	background-position: center;
+	background-size: cover; 
+}
+#admissionspic h4{
+	width: 110px;	
+}
+
+#admissions .text strong {
+	background-color: #F60;
+}
+
+#admissions .text strong:hover {
+	background-color: #666;
+}
+
+#admissions .quote span {
+	font-weight: 400;
+}
+
+#galleryguidepic {
+	background:url(../img/full/galleryguide/galleryguide_header.jpg) 100% 0 no-repeat fixed;
+	background-position: center;
+	background-size: cover; 
+}
+
+#thinbluelinepic {
+	background:url(../img/full/thinblueline/thinblueline_header.jpg) 100% 0 no-repeat fixed;
+	background-position: center;
+	background-size: cover; 
+}
+
+#perceptionspic {
+	background:url(../img/full/perceptions/perceptions_header.jpg) 100% 0 no-repeat fixed;
+	background-position: center;
+	background-size: cover; 
+}
+
+#perceptions .text strong {
+	background-color: #399;
+}
+
+#perceptions .text strong:hover {
+	background-color: #666;
+}
+
+#iplaybillpic {
+	background:url(../img/full/iplaybill/iplaybill_header.jpg) 100% 0 no-repeat fixed;
+	background-position: center;
+	background-size: cover; 
+}
+
+#fineartpic {
+	background:url(../img/full/fineart/fineart_header.jpg) 100% 0 no-repeat fixed;
+	background-position: center;
+	background-size: cover; 
+}
+
+#squirreldescentpic {
+	background:url(../img/full/squirreldescent/squirreldescent_header.jpg) 100% 0 no-repeat fixed;
+	background-position: center;
+	background-size: cover; 
+}
+
+#squirreldescent .text strong {
+	background-color: #00bfff;
+}
+
+#squirreldescent .text strong:hover {
+	background-color: #666;
+}
+
+#cartoonistpic {
+	background:url(../img/full/cartoonist/cartoonist_header.jpg) 100% 0 no-repeat fixed;
+	background-position: center;
+	background-size: cover; 
+}
+
+#webmasterspic {
+	background:url(../img/full/webmasters/webmasters_header.jpg) 100% 0 no-repeat fixed;
+	background-position: center;
+	background-size: cover; 
+}
+
+#facespacewebsitepic{
+	background:url(../img/full/facespace/facespace_header.jpg) 100% 0 no-repeat fixed;
+	background-position: center;
+	background-size: cover; 
+}
+
+#facespacewebsite .text strong {
+	background-color: #FC3;
+	color: #999;
+}
+
+#facespacewebsite .text strong:hover {
+	background-color: #666;
+	color: #CCC;
+}
+
+#rebuspic{
+	background:url(../img/full/rebus/rebus_header.jpg) 100% 0 no-repeat fixed;
+	background-position: center;
+	background-size: cover; 
+}
+
+#typografikapic {
+	background:url(../img/full/typografika/typografika_header4.jpg) 100% 0 no-repeat fixed;
+	background-position: center;
+	background-size: cover; 
+}
+
+#typografika .text strong {
+	background-color: #F6719D;
+}
+
+#typografika .text strong:hover {
+	background-color: #666;
+}
+
+#apmpic {
+	background:url(../img/full/apm/apm_header.jpg) 100% 0 no-repeat fixed;
+	background-position: center;
+	background-size: cover; 
+}
+
+#apm .text strong {
+	background-color: #00395F;
+}
+
+#apm .text strong:hover {
+	background-color: #666;
+}
+
+#scandpic {
+	background:url(../img/full/scandanavia/scand_header.jpg) 100% 0 no-repeat fixed;
+	background-position: center;
+	background-size: cover; 
+}
+
+#apm .text strong {
+	background-color: #00395F;
+}
+
+#apm .text strong:hover {
+	background-color: #666;
+}
+/*-------------BOTTOM NAV---------------*/
+.imagenav i{
+	float: left;
+	text-align: center;	
+	width: 33.33%;
+	padding: 15px 0;	
+	border-right: 1px solid #CCC;
+	border-bottom: 1px solid #CCC;
+	background-color: #B5B5B5;
+}
+
+.imagenav .nopad i{
+	padding-right:0; 
+	margin-right:0; 
+	border-right:none;
+}
+
+.show_hide {
+    display:none;
+}
+
+.slidingDiv {
+		/*background-color: #EBEBEB;*/
+}
+
+.threecolumn {
+	/*padding: 10px 7%;*/
+}
+
+.threecolumn li{
+	transition:all .5s ease-in-out; 
+    -o-transition:all .5s ease-in-out; 
+    -moz-transition:all .5s ease-in-out; 
+    -webkit-transition:all .5s ease-in-out;
+}
+
+.threecolumn li {
+ 	width: 33.33%;
+ 	float: left;
+}
+
+.threecolumn img {
+	display: inline-block;
+  	height: auto;
+  	max-width: 100%;
+  	vertical-align: middle;
+}
+
+img.grayscale {
+	filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'grayscale\'><feColorMatrix type=\'matrix\' values=\'0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0\'/></filter></svg>#grayscale"); /* Firefox 3.5+ */    
+    filter: gray; /* IE6-9 */
+	-webkit-filter: grayscale(100%); /* Chrome 19+ & Safari 6+ */
+}
+
+img.grayscale:hover {
+    filter: none;
+    -webkit-filter: grayscale(0);
+}
+
+
+/*-------------FOOTER---------------*/
+footer {
+	background-color: #CCC;
+	text-align: center;
+}
+icon-mail-alt a{
+	background-color: #CCC;
+	text-align: right;
+}
+
+#icons {
+	font-size: 1.5em;
+	padding: 30px 0 15px 0;
+	width: 101px; 
+	margin: 0 auto;	
+}
+
+#icons .icon-youtube-squared i{
+	padding-right: 0;
+}
+
+#icons a {
+	float: left;
+	text-align: center;
+}
+
+.footerline {	
+	border-bottom:1px solid #999;
+	margin: 10px 7% 0 7%;
+	width: 86%;
+}
+
+footer p {
+	padding-top: 10px 0 0 0;
+	margin: 0 7%;
+	width: 86%;
+	font-family: 'Lato', sans-serif;
+	font-weight: 300;
+	color: #666;
+	font-size: .75em;
+}
+
+#footertext {
+	padding: 30px 0;
+}
+
+.thanks {	
+	margin-top: 6px;
+}
+
+
+.intro {
+	
+}
+
+.intro p{
+	margin: 50px 7%;
+	font-size: 1.5em;
+	font-family: 'Lato', sans-serif;	
+	font-weight: 300;
+	line-height: 1.5em;
+}
+
+
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+/*
+ * Image replacement
+ */
+
+.ir {
+    background-color: transparent;
+    border: 0;
+    overflow: hidden;
+    /* IE 6/7 fallback */
+    *text-indent: -9999px;
+}
+
+.ir:before {
+    content: "";
+    display: block;
+    width: 0;
+    height: 150%;
+}
+
+/*
+ * Hide from both screenreaders and browsers: h5bp.com/u
+ */
+
+.hidden {
+    display: none !important;
+    visibility: hidden;
+}
+
+/*
+ * Hide only visually, but have it available for screenreaders: h5bp.com/v
+ */
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+/*
+ * Extends the .visuallyhidden class to allow the element to be focusable
+ * when navigated to via the keyboard: h5bp.com/p
+ */
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+}
+
+/*
+ * Hide visually and from screenreaders, but maintain layout
+ */
+
+.invisible {
+    visibility: hidden;
+}
+
+/*
+ * Clearfix: contain floats
+ *
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    `contenteditable` attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that receive the `clearfix` class.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+
+.clearfix:before,
+.clearfix:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+/*
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+
+.clearfix {
+    *zoom: 1;
+}
+
+/* ==========================================================================
+   EXAMPLE Media Queries for Responsive Design.
+   These examples override the primary ('mobile first') styles.
+   Modify as content requires.
+   ========================================================================== */
+
+
+
+@media only screen and (min-width: 365px) {
+footer p {
+	font-size: .9em;
+}
+
+}
+
+@media only screen and (min-width: 450px) {
+.caption{display:none;}
+.medium{display:none;}
+.medium1{display:none;}
+.caption1{display:none;}	
+	
+
+header h1 {
+	margin: 0 7%;
+}
+
+
+/*-------------BANNER IMAGE----------------*/
+
+h2 {
+	font-size: 2.5em;
+	transition:all .5s ease-in-out; 
+  	-o-transition:all .5s ease-in-out; 
+  	-moz-transition:all .5s ease-in-out; 
+  	-webkit-transition:all .5s ease-in-out;
+}
+
+h4 {
+	font-size: 1em;
+	padding: 5px;
+	width: 105px;
+}
+
+#admissionspic h4 {
+	width: 160px;	
+}
+
+#about h4 {
+	font-size: 1em;
+	width: 150px;	
+}
+
+section {
+	padding: 185px 0 125px 0;	
+}
+
+.main1 {
+	padding-top: 150px;
+}
+
+.home li {
+ 	width: 50%;
+}
+
+
+}
+
+
+@media only screen and (min-width: 580px) {
+
+
+header {	
+	position:fixed;
+	z-index: 999;
+}
+	
+.navbar-fixed {
+	position: absolute;
+	border: none;
+	padding: 0;
+	width:253px;
+	padding-top: 14px;
+}
+
+.nav{
+	position: absolute;
+	right: 5.2%;
+	top: 13px;
+	border: none;
+	box-shadow: none;
+	background-color:transparent;
+}
+
+.nav li{
+	display: inline;
+}
+
+.nav li a {
+	width: inherit;
+	text-align: right;
+	padding-left:10px; 
+	float: none;
+}
+
+.homepage {
+	padding: 100px 5% 0 5%;
+}
+
+.homepage li {
+	width: 50%;
+	float: left;
+}
+
+.home {
+	padding-top: 70px;
+}
+
+
+
+
+}
+
+@media only screen and (min-width: 625px) {
+.grid li {
+	width: 300px;
+	margin: 0;
+	padding: 8px;
+}
+
+
+
+}
+
+
+@media screen and (min-width: 700px) {
+
+	
+	
+/*--Footer--*/
+footer {
+	text-align: left;
+	padding: 40px 0;
+}
+
+#icons { 
+	position: absolute;
+	right: 0;
+	margin-right: 7%;
+
+}
+.footerline {	
+	display: none;
+}
+
+	
+}
+
+@media only screen and (min-width: 768px) {
+
+
+header h1 {
+	margin: 0 7%;
+}
+
+.grid li {
+	width: 360px;
+	margin: 0;
+	padding: 8px;
+}
+
+
+
+.threecolumn li {
+  width: 20%;
+  transition:all .5s ease-in-out; 
+  -o-transition:all .5s ease-in-out; 
+  -moz-transition:all .5s ease-in-out; 
+  -webkit-transition:all .5s ease-in-out;
+}  
+
+.text {
+	padding-top: 65px;
+}
+
+.grid_4 { 
+	width: 29%; 
+	padding-left: 3%;
+} 
+ 
+.grid_8 { 
+	width: 62%; 
+	padding-right:2%; 
+	border-right: 1px solid #999; 
+} 
+
+.grid_4,
+.grid_8 {
+	margin: 0 2% 1% 0;
+	float: left;
+	display: block;
+}
+
+.grid_8 {
+	margin-left: 3%;
+}
+
+.omega{
+	margin-right:0;
+}
+
+.grid{
+	margin: 0 7%;
+}
+
+.line {
+	border-bottom: none;
+}
+
+.homepage li {
+	width: 33.33%;
+}
+
+.home li {
+ 	width: 33.33%;
+}
+
+
+/*----About----*/
+#about .line {
+	border-bottom: 1px solid #999;
+}
+
+#about #skills .line {
+	margin-top: 60px;
+}
+
+#about section{
+	padding:300px 0 200px 0;
+	transition:all .5s ease-in-out; 
+  	-o-transition:all .5s ease-in-out; 
+  	-moz-transition:all .5s ease-in-out; 
+  	-webkit-transition:all .5s ease-in-out;
+}
+
+#about span {
+	margin:0;
+	padding:0;
+}
+
+#education .tabs {
+	padding: 20px 0;
+	margin:10px 0 0 -3%;
+}
+
+#about img {
+	display: block;
+	float: none;
+	width: 40%;
+	padding: 0;
+	margin:0 auto 20px auto;
+}
+
+.col {
+    display: block;
+    float: left;
+    margin: 1% 0 1% 3%;
+	border: 1px solid #999;
+	font-family: 'Lato', sans-serif;	
+	font-weight: 400;
+    color:#666;
+    text-decoration:none;
+	text-align: center;
+	font-size: 1em;
+}
+
+.text .col span{
+	text-transform: uppercase;
+	font-weight: 600;	
+	font-size: .8em;
+	line-height: 1em;
+}
+
+.text .col {	
+	text-transform: uppercase;
+	font-weight: 300;	
+	font-size: 1.1em;
+	line-height: 1.5em;
+}
+
+.section {
+  margin: 0 7%;
+}
+
+.column {
+    width: 30%;
+}
+
+
+
+#skills .tabs, #interests .tabs {
+	padding: 20px 0;
+	margin:10px 0 0 -4.5%;
+}
+
+.skills {
+    width: 30%;
+	float: left;    
+	margin: 1% 0 1% 3%;
+}
+
+.selected {
+    font-weight:bold;
+	background-color: #399;
+	color: #F3EFE0;
+}
+
+.tab-content {
+    clear:both;
+    padding:0;
+}
+
+.tab-content p {
+	background-color: #E9E4D6;
+	text-align: center;
+	font-size: .9em;
+	line-height: 1.3em;
+	width:100%;
+	margin: 0 auto;
+}
+
+}
+
+@media only screen and (min-width: 1024px) {
+.homepage li {
+	width: 25%;
+}
+	
+.grid li {
+	width: 400px;
+	margin: 0;
+	padding: 8px;
+}
+
+}
+
+@media only screen and (min-width: 1200px) {
+.twocolumn li{
+	margin:1% 0;
+    position:relative;
+    float:left;
+    width:16.6666667%; /* Fallback */
+    width:48%;
+	transition:all .5s ease-in-out; 
+    -o-transition:all .5s ease-in-out; 
+    -moz-transition:all .5s ease-in-out; 
+    -webkit-transition:all .5s ease-in-out;
+}
+
+li.right{
+	margin-right: 4%;
+}
+
+.main .images img.lastimage {
+	padding-bottom: 50px;
+}
+
+.twocolumn li .only{
+	width: 100%;
+}
+
+.home li {
+}
+
+}
+
+
+@media print,
+       (-o-min-device-pixel-ratio: 5/4),
+       (-webkit-min-device-pixel-ratio: 1.25),
+       (min-resolution: 120dpi) {
+    /* Style adjustments for high resolution devices */
+}
+
+/* ==========================================================================
+   Print styles.
+   Inlined to avoid required HTTP connection: h5bp.com/r
+   ========================================================================== */
+
+@media print {
+    * {
+        background: transparent !important;
+        color: #000 !important; /* Black prints faster: h5bp.com/s */
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+
+    /*
+     * Don't show links for images, or javascript/internal links
+     */
+
+    .ir a:after,
+    a[href^="javascript:"]:after,
+    a[href^="#"]:after {
+        content: "";
+    }
+
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+
+    thead {
+        display: table-header-group; /* h5bp.com/t */
+    }
+
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+
+    img {
+        max-width: 100% !important;
+    }
+
+    @page {
+        margin: 0.5cm;
+    }
+
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+}
